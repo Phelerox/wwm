@@ -263,6 +263,7 @@ pub fn load() -> Result<Config, Box<dyn std::error::Error>> {
                             "Alt" => Modifier::ALT,
                             "Control" => Modifier::CONTROL,
                             "Shift" => Modifier::SHIFT,
+                            "Win" => Modifier::WIN,
                             _ => Modifier::default(),
                         })
                         .fold(Modifier::default(), |mut sum, crr| {
